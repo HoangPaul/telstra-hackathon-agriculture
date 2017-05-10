@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Discover</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Seasonal Crops</h2>
+  <div class="slider-wrapper">
+    <ion-slides slidesPerView="2" spaceBetween="30">
+      <ion-slide *ngFor="let item of items">
+        <div class="item">
+          <img src="https://placehold.it/300x300" />
+          <div class="textbox">
+            <h3>{{ item.name }}</h3>
+            <p>{{ item.harvest }}</p>
+          </div>
+        </div>
+      </ion-slide>
+    </ion-slides>
+  </div>
+  <h2>Popular Crops</h2>
+  <div class="slider-wrapper">
+    <ion-slides slidesPerView="2" spaceBetween="30">
+      <ion-slide *ngFor="let item of items">
+        <div class="item">
+          <img src="https://placehold.it/300x300" />
+          <div class="textbox">
+            <h3>{{ item.name }}</h3>
+            <p>{{ item.harvest }}</p>
+          </div>
+        </div>
+      </ion-slide>
+    </ion-slides>
+  </div>
+  <h2>All Crops</h2>
+  <div class="slider-wrapper">
+    <ion-slides slidesPerView="2" spaceBetween="30">
+      <ion-slide *ngFor="let item of items">
+        <div class="item">
+          <img src="https://placehold.it/300x300" />
+          <div class="textbox">
+            <h3>{{ item.name }}</h3>
+            <p>{{ item.harvest }}</p>
+          </div>
+        </div>
+      </ion-slide>
+    </ion-slides>
+  </div>
+</ion-content>
