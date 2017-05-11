@@ -1,0 +1,44 @@
+<ion-content>
+  <img src="https://placehold.it/700x800" alt="" style="min-height: 430px">
+  <div padding>
+    <h1>Tomatoes</h1>
+    <small>Summer Crop</small>
+    <p>Light and tangy flavour, filled with umami, commonly used across the globe in dishes such as pasta and pizza.</p>
+    <hr>
+    <h2>Customise your Crop</h2>
+
+    <div class="progress-title">
+      <h3><ion-icon name="checkmark-circle"></ion-icon> Varieties/Species</h3>
+    </div>
+    <div class="progress-content">
+      <div class="item" *ngFor="let item of cropItems" (click)="selectCropItem(item)" [class.active]="item.isSelected">
+        <div class="image">
+          <img src="https://placehold.it/400x400" alt="">
+          <ion-icon name="checkmark-circle"></ion-icon>
+        </div>
+        <div class="text">
+          <h5>{{ item.name }}</h5>
+          <p>{{ item.description }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="progress-title">
+      <h3><ion-icon name="checkmark-circle"></ion-icon> Fertilisers</h3>
+    </div>
+    <div class="progress-content">
+      <div class="item" *ngFor="let item of fertiliserItems" (click)="selectFertiliserItem(item)" [class.active]="item.isSelected">
+        <div class="image">
+          <img src="https://placehold.it/400x400" alt="">
+          <ion-icon name="checkmark-circle"></ion-icon>
+        </div>
+        <div class="text">
+          <h5>{{ item.name }}</h5>
+          <p>{{ item.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button ion-button full outline [navPush]="farm">
+    Continue 1/2
+  </button>
+</ion-content>

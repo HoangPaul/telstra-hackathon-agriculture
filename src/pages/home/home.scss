@@ -1,10 +1,6 @@
 page-home {
-  ion-content {
-    background-color: #acacac !important;
-  }
 
   h2 {
-    color: white;
     font-weight: 400;
     font-size: 18px;
   }
@@ -12,6 +8,7 @@ page-home {
   .slider-wrapper {
     width: 85%;
   }
+
   .swiper-container {
     overflow: visible;
   }
@@ -20,6 +17,10 @@ page-home {
     .item {
       display: flex;
       flex-direction: column;
+
+      img {
+        border-radius: 30px;
+      }
     }
 
     .textbox {

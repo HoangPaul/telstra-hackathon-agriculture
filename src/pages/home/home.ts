@@ -3,6 +3,8 @@ import { Component, ViewChild } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { Content } from 'ionic-angular';
 
+import { CropPage } from '../crop/crop';
+
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -21,7 +23,7 @@ export class HomePage {
     }
   }
 
-  scrollTo() {
-    this.content.scrollTo(0, 500, 1000);
+  goToCropPage() {
+    this.navCtrl.push(CropPage);
   }
 }
