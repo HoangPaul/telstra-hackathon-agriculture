@@ -1,10 +1,26 @@
 page-farm {
+  .item {
+    position: relative;
+    margin-bottom: 15px;
+    min-height: 120px;
+  }
+
   .text {
     position: absolute;
     top: 0;
-    bottom: 0;
+    bottom: 3px;
     left: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  h2 {
+    font-weight: 300;
+    margin-bottom: 5px;
   }
 }
