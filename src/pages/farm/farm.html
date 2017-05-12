@@ -9,7 +9,7 @@
 
 <ion-content padding>
   <div class="item" *ngFor="let farm of farms" (click)="goToFarmDetailPage(farm)">
-    <img src="https://placehold.it/800x275" alt="">
+    <img src="/assets/images/{{ farm.image }}" alt="">
     <div class="text">
       <h2>{{ farm.name }}</h2>
       <small>{{ farm.location }}</small>

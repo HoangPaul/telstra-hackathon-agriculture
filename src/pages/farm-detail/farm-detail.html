@@ -8,7 +8,7 @@
 
 
 <ion-content>
-  <img src="https://placehold.it/700x800" alt="" style="min-height: 430px">
+  <img src="/assets/images/700x800.jpeg" alt="" style="min-height: 430px">
   <div padding>
     <div class="order-summary">
       <div class="crop-fertiliser">
@@ -22,7 +22,7 @@
     <div class="farm-description">
       <p>{{ farm.description }}</p>
     </div>
-    <img src="https://placehold.it/400x200" alt="">
+    <img src="https://maps.googleapis.com/maps/api/staticmap?center=-37.521687, 145.070331&zoom=13&size=400x200&key=AIzaSyAodTyDDDaQlVLMWDmHksa9030r2tyzgDk" alt="">
   </div>
   <button ion-button outline full (click)="placeOrder()" [disabled]="isLoading">
     <ion-spinner *ngIf="isLoading; else elseBlock"></ion-spinner>

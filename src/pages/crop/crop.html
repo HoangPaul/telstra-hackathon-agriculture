@@ -1,5 +1,5 @@
 <ion-content>
-  <img src="https://placehold.it/700x800" alt="" style="min-height: 430px">
+  <img src="/assets/images/350x400.jpeg" alt="" style="min-height: 430px">
   <div padding>
     <h1>Tomatoes</h1>
     <small>Summer Crop</small>
@@ -13,7 +13,7 @@
     <div class="progress-content">
       <div class="item" *ngFor="let item of cropItems" (click)="selectCropItem(item)" [class.active]="item.isSelected">
         <div class="image">
-          <img src="https://placehold.it/400x400" alt="">
+          <img src="/assets/images/{{ item.image }}" alt="">
           <ion-icon name="checkmark-circle"></ion-icon>
         </div>
         <div class="text">
@@ -28,7 +28,7 @@
     <div class="progress-content">
       <div class="item" *ngFor="let item of fertiliserItems" (click)="selectFertiliserItem(item)" [class.active]="item.isSelected">
         <div class="image">
-          <img src="https://placehold.it/400x400" alt="">
+          <img src="/assets/images/{{ item.image }}" alt="">
           <ion-icon name="checkmark-circle"></ion-icon>
         </div>
         <div class="text">

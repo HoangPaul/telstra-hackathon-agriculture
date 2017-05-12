@@ -14,44 +14,55 @@ import { FarmPage } from '../farm/farm';
 })
 export class CropPage {
 
-  cropItems = [];
+  cropItems = [
+    {
+      'id': 0,
+      'name': 'Brandywine Tomatoes',
+      'description': 'Light and tangy flavour, filled with umami, commonly used in pizza',
+      'image': '350x350.jpeg',
+      'isSelected': true
+    },
+    {
+      'id': 1,
+      'name': 'Mortgage Lifter Tomatoes',
+      'description': 'Light and tangy flavour, filled with umami, commonly used in pizza',
+      'image': 'tomato_mortgage_lifter.jpg',
+      'isSelected': true
+    },
+    {
+      'id': 2,
+      'name': 'Heirloom Tomatoes',
+      'description': 'Light and tangy flavour, filled with umami, commonly used in pizza',
+      'image': 'heirloom-tomato.jpg',
+      'isSelected': true
+    }
+  ];
+
   fertiliserItems = [
     {
       'id': 0,
       'name': 'Mixture A Fertiliser',
       'description': 'A mix of homemade compost, blood and bone, and potash',
-      'isSelected': true
+      'isSelected': true,
+      'image': '400x400.jpg',
     },
     {
       'id': 1,
       'name': 'Homemade Compost',
       'description': 'Rich, fresh homemade compost',
-      'isSelected': false
+      'isSelected': false,
+      'image': '400x400.jpg',
     },
     {
       'id': 2,
       'name': 'No Fertiliser',
       'description': 'No fertiliser will be used',
-      'isSelected': false
+      'isSelected': false,
+      'image': '400x400_placeholder.png',
     }
   ];
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.cropItems.push({
-      'id': 0,
-      'name': 'Brandywine Tomatoes',
-      'description': 'Light and tangy flavour, filled with umami, commonly used in pizza',
-      'isSelected': true
-    });
-
-    for (let i = 1; i < 3; i++) {
-      this.cropItems.push({
-        'id': i,
-        'name': 'Brandywine Tomatoes',
-        'description': 'Light and tangy flavour, filled with umami, commonly used in pizza',
-        'isSelected': false
-      });
-    }
   }
 
   selectCropItem(item) {

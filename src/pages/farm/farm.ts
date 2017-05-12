@@ -15,21 +15,24 @@ export class FarmPage {
       'name': 'Berningdale Farm',
       'location': 'South Australia',
       'soil_type': 'Sandy Soil',
-      'description': 'Brunsdale farm has a history of great product with a friendly team of family run farmers dedicated to producing great produce'
+      'description': 'Brunsdale farm has a history of great product with a friendly team of family run farmers dedicated to producing great produce',
+      'image': '800x275.jpeg'
     },
     {
       'id': 1,
-      'name': 'Berningdale Farm',
+      'name': 'Eastwood Farm',
       'location': 'South Australia',
       'soil_type': 'Sandy Soil',
-      'description': 'Brunsdale farm has a history of great product with a friendly team of family run farmers dedicated to producing great produce'
+      'description': 'Brunsdale farm has a history of great product with a friendly team of family run farmers dedicated to producing great produce',
+      'image': '218x75.jpeg'
     },
     {
       'id': 2,
-      'name': 'Berningdale Farm',
+      'name': 'Tales Farm',
       'location': 'South Australia',
       'soil_type': 'Sandy Soil',
-      'description': 'Brunsdale farm has a history of great product with a friendly team of family run farmers dedicated to producing great produce'
+      'description': 'Brunsdale farm has a history of great product with a friendly team of family run farmers dedicated to producing great produce',
+      'image': '218x75_2.jpeg'
     }
   ];
 
