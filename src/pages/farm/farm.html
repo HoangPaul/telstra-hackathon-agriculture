@@ -8,12 +8,12 @@
 
 
 <ion-content padding>
-  <div class="item" *ngFor="let i of [1, 2, 3]">
+  <div class="item" *ngFor="let farm of farms" (click)="goToFarmDetailPage(farm)">
     <img src="https://placehold.it/800x275" alt="">
     <div class="text">
-      <h2>Berningdale Farm</h2>
-      <small>South Australia</small>
-      <small>Sandy Soil</small>
+      <h2>{{ farm.name }}</h2>
+      <small>{{ farm.location }}</small>
+      <small>{{ farm.soil_type }}</small>
     </div>
   </div>
 </ion-content>

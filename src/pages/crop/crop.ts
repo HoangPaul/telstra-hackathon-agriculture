@@ -14,12 +14,11 @@ import { FarmPage } from '../farm/farm';
 })
 export class CropPage {
 
-  farm = FarmPage;
   cropItems = [];
   fertiliserItems = [
     {
       'id': 0,
-      'name': 'Mixture A',
+      'name': 'Mixture A Fertiliser',
       'description': 'A mix of homemade compost, blood and bone, and potash',
       'isSelected': true
     },
@@ -31,7 +30,7 @@ export class CropPage {
     },
     {
       'id': 2,
-      'name': 'None',
+      'name': 'No Fertiliser',
       'description': 'No fertiliser will be used',
       'isSelected': false
     }
@@ -40,7 +39,7 @@ export class CropPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.cropItems.push({
       'id': 0,
-      'name': 'Brandywine',
+      'name': 'Brandywine Tomatoes',
       'description': 'Light and tangy flavour, filled with umami, commonly used in pizza',
       'isSelected': true
     });
@@ -48,7 +47,7 @@ export class CropPage {
     for (let i = 1; i < 3; i++) {
       this.cropItems.push({
         'id': i,
-        'name': 'Brandywine',
+        'name': 'Brandywine Tomatoes',
         'description': 'Light and tangy flavour, filled with umami, commonly used in pizza',
         'isSelected': false
       });
@@ -67,5 +66,31 @@ export class CropPage {
     for (let i = 0; i < this.fertiliserItems.length; i++) {
       this.fertiliserItems[i].isSelected = this.fertiliserItems[i].id === id;
     }
+  }
+
+  getSelectedCropItem() {
+    for (let i = 0; i < this.cropItems.length; i++) {
+      if (this.cropItems[i].isSelected) {
+        return this.cropItems[i];
+      }
+    }
+  }
+
+  getSelectedFertiliserItem() {
+    for (let i = 0; i < this.fertiliserItems.length; i++) {
+      if (this.fertiliserItems[i].isSelected) {
+        return this.fertiliserItems[i];
+      }
+    }
+  }
+
+  continueToNextPage() {
+    const selectedCrop = this.getSelectedCropItem();
+    const selectedFeriliser = this.getSelectedFertiliserItem();
+
+    this.navCtrl.push(FarmPage, {
+      'crop': selectedCrop,
+      'fertiliser': selectedFeriliser
+    })
   }
 }

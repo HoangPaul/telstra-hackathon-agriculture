@@ -1,0 +1,31 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{ farm.name }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <img src="https://placehold.it/700x800" alt="" style="min-height: 430px">
+  <div padding>
+    <div class="order-summary">
+      <div class="crop-fertiliser">
+        <h2><ion-icon name="checkmark-circle"></ion-icon> Your crop</h2>
+        <ul>
+          <li>{{ crop.name }}</li>
+          <li>{{ fertiliser.name }}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="farm-description">
+      <p>{{ farm.description }}</p>
+    </div>
+    <img src="https://placehold.it/400x200" alt="">
+  </div>
+  <button ion-button outline full (click)="placeOrder()" [disabled]="isLoading">
+    <ion-spinner *ngIf="isLoading; else elseBlock"></ion-spinner>
+    <template #elseBlock>Place booking</template>
+  </button>
+</ion-content>

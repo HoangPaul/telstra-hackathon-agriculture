@@ -10,6 +10,8 @@ import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { CropPage } from '../pages/crop/crop';
 import { FarmPage } from '../pages/farm/farm';
+import { FarmDetailPage } from '../pages/farm-detail/farm-detail';
+import { OrderSuccessPage } from '../pages/order-success/order-success';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -22,7 +24,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     TabsPage,
     CropPage,
-    FarmPage
+    FarmPage,
+    FarmDetailPage,
+    OrderSuccessPage
   ],
   imports: [
     CommonModule,
@@ -37,7 +41,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     TabsPage,
     CropPage,
-    FarmPage
+    FarmPage,
+    FarmDetailPage,
+    OrderSuccessPage
   ],
   providers: [
     StatusBar,

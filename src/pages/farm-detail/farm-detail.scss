@@ -1,0 +1,57 @@
+page-farm-detail {
+  .order-summary {
+    padding: 15px;
+    color: #999;
+    display: flex;
+    justify-content: center;
+
+    h2 {
+      margin-bottom: 0;
+    }
+
+    ion-icon {
+      padding-right: 10px;
+      color: green;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 10px;
+      padding-top: 15px;
+      margin-left: 10px;
+      margin-top: 0;
+      margin-bottom: 0;
+      border-left: 1px solid #999;
+
+      li {
+        position: relative;
+        margin-bottom: 15px;
+        padding-left: 20px;
+
+        &:before {
+          display: block;
+          content: ' ';
+          position: absolute;
+          left: -15px;
+          top: 3px;
+          width: 9px;
+          height: 9px;
+          background-color: green;
+          border-radius: 99999px;
+        }
+      }
+    }
+  }
+
+  .farm-description {
+    color: #999;
+  }
+
+  img {
+    border: 1px solid #999;
+  }
+
+  .button {
+    margin-bottom: 0;
+  }
+}
