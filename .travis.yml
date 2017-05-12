@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+  - "6.9.1"
+cache: yarn
+install:
+  - yarn global add cordova ionic
+  - yarn install
+script:
+  - ionic upload
