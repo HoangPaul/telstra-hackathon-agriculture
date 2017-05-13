@@ -19,14 +19,14 @@ export class HomePage {
       'image': '350x350.jpeg'
     },
     {
-      'name': 'Fennel',
-      'harvest': 'Jul - Aug Harvest',
-      'image': '350x350.jpeg'
+      'name': 'Basil',
+      'harvest': 'June - July Harvest',
+      'image': 'basil.Jpg'
     },
     {
-      'name': 'Spinach',
-      'harvest': 'June - July Harvest',
-      'image': '350x350.jpeg'
+      'name': 'Fennel',
+      'harvest': 'Jul - Aug Harvest',
+      'image': 'fennel.jpg'
     }
   ];
 
@@ -39,12 +39,12 @@ export class HomePage {
     {
       'name': 'Cucumber',
       'harvest': 'Jul - Aug Harvest',
-      'image': '350x350.jpeg'
+      'image': 'cucumber.png'
     },
     {
-      'name': 'Potato',
+      'name': 'Parsley',
       'harvest': 'June - July Harvest',
-      'image': '350x350.jpeg'
+      'image': 'parsley.jpg'
     }
   ];
 
